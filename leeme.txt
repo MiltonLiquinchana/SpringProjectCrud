@@ -1,0 +1,26 @@
+para la generacion del la tabla desde spring debe haberse creado una base de datos con el nombre personas
+y luego se debe ejecutar en la direccion
+
+http://localhost:8080/greeting
+
+en este proyecto se implementa por primera vez spring y servicios restful
+para verificar el funcionamiento se esta haciendo uso de postman 
+con la siguiente direccion http://localhost:8080/personas
+para la consulta se ejecuta en el metodo get
+para poder insertar se ejecuta el metodo post 
+y en el json se aplica el siguiente formato
+ {
+        "idPersona": # del id,
+        "nombre": "un nombre cualquiera"
+  }
+
+para la actualizacion se ejecuta el metodo put con el mismo formato del json en el cual se debe indicar
+el id del registro a modificar
+ {
+        "idPersona": 2,
+        "nombre": "Milton Liquinchana"
+  }
+
+para la eliminacion se debe ejecutar
+http://localhost:8080/personas/1
+el /1 indica el id del registro a eliminar
